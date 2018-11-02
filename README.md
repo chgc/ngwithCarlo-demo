@@ -27,3 +27,6 @@ In package.json file.
     "assets": "dist/ngWithCarlo/**/*"
   },
 ```
+
+## targets
+when run `pkg package.json`, it can add `--targets` to specific target platform. More information can be found in pkg repo.
