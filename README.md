@@ -1,27 +1,17 @@
-# NgWithCarlo
+# Some Information
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.0.3.
+This is an experimental for Carlo with Angular project.
 
-## Development server
+This repo can use pkg to build this project to a single executable file. (You need install pkg as global to make this command to work)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+# Carlo
 
-## Code scaffolding
+> Carlo provides Node applications with the rich rendering capabilities powered by the Google Chrome browser. It uses Puppeteer project to communicate with the locally installed browser instance, provides remote call infrastructure for communication between Node and the browser.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+https://github.com/GoogleChromeLabs/carlo
 
-## Build
+# pkg
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+> Package your Node.js project into an executable
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+https://github.com/zeit/pkg

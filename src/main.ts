@@ -8,5 +8,19 @@ if (environment.production) {
   enableProdMode();
 }
 
-platformBrowserDynamic().bootstrapModule(AppModule)
+declare var env;
+
+platformBrowserDynamic()
+  .bootstrapModule(AppModule)
   .catch(err => console.error(err));
+
+async function run() {
+  // Call the function that was exposed in Node.
+  const data = await env();
+  // tslint:disable-next-line:forin
+  for (const type in data) {
+    const div = document.createElement('div');
+    div.textContent = `${type}: ${data[type]}`;
+    document.body.appendChild(div);
+  }
+}

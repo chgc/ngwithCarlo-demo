@@ -7,7 +7,15 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "pack": "pkg package.json"
+  },
+  "bin": {
+    "ngcarlodemo-app": "./dist/ngWithCarlo/server.js"
+  },
+  "pkg": {
+    "scripts": "dist/ngWithCarlo/**/*.js",
+    "assets": "dist/ngWithCarlo/**/*"
   },
   "private": true,
   "dependencies": {
@@ -20,6 +28,7 @@
     "@angular/platform-browser": "~7.0.0",
     "@angular/platform-browser-dynamic": "~7.0.0",
     "@angular/router": "~7.0.0",
+    "carlo": "^0.9.7",
     "core-js": "^2.5.4",
     "rxjs": "~6.3.3",
     "zone.js": "~0.8.26"
