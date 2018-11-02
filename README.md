@@ -15,3 +15,15 @@ https://github.com/GoogleChromeLabs/carlo
 > Package your Node.js project into an executable
 
 https://github.com/zeit/pkg
+
+In package.json file.
+
+```json
+"bin": {
+    "ngcarlodemo-app": "./dist/ngWithCarlo/server.js"
+  },
+  "pkg": {
+    "scripts": "dist/ngWithCarlo/**/*.js",
+    "assets": "dist/ngWithCarlo/**/*"
+  },
+```
